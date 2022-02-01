@@ -1,0 +1,28 @@
+Critical user flows:
+
+1. Registration & Login
+
+- Registration: It's a main flow whether the users will be able to use zyro service or not.
+For instance: the clients are not able to create a zyro account(bad for UX) they can't to buy(select)
+plans which are crucial thing for create own website. They can't to use other services as well.
+
+- Login with zyro account and including option via [Faceebok, Google, Apple]: Without these function the clients will not be
+able to use zyro services also it's not related just with website builder but all zyro services which are available for the clients.
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. Payments Methods [VISA, PayPal, GPay, PaySera]: We all have different payment methods, and we will not be satisfied if we can't to perform
+payment with own credit card or PayPal account on store when we buyin something.
+The same with zyro clients has own payment method and if one method is not working it's a problem.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+3. zyro Support: Every time when we start to learn whether to do something new and sometimes unsuccessful. Then support
+comes. I think some people have more knowledge some have more expierence with different things but some people not. And
+they need support for help for answering a questions. I think it's one of the main user flow. If something wrong with zyro
+account, website, domain, and etc they can contact with zyro support team, and they will help. Who can help to zyro customers?
+zyro support specialist.
+
+

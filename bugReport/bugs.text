@@ -1,0 +1,277 @@
+# bugs
+
+1. Registration side: Invalid email 422
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: In the registration form the client entered all inputs. Email length was [75] characters.
+       Then the client clicked "Create account" button.After that was displayed black modal below
+       {"Validation Error"}
+       but it's not clear whats actualy happen. According to request preview tab looks like
+       something wrong with email format.
+
+Steps to replicate:
+
+1.Open zyro.com/lt
+2.Click Sukurti paskyra on the right corner above or just go to(https://zyro.com/lt/registruokis)
+3.Enter email which consist of 75 characters length
+4.Enter password
+5.Enter telephone number (6 symbols)
+6.Click "Sukurti paskyra"
+7.Open Developer tools > preview tab
+
+Expected: Registration should be successful also if email format is invalid then validation error message
+should be clear (for instance: Email format is too long or Invalid, please enter next one or etc.)
+Also validation error message should be displayed in-line below particular field.
+
+Actual: Registration failed. Validation Error message displayed below registration form and not understandable which
+field was entered incorrectly.
+
+Video: < https://www.loom.com/share/5cb3d16be5074b36a88af0c1e0d38993 >
+
+-------------------------------------------------------------------------
+
+2. Registration side: Server Error
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: Issue: In the registration form the client entered all inputs. Email length was [74] characters.
+       Then the client clicked "Create account" button.After that All inputs still displayed in the fields
+       but it's not clear whats actualy happen. According to request looks like problem is with
+       the server (server 500 error). Preview tab shows different error message code: 400.
+
+Steps to replicate:
+
+1.Open zyro.com/lt
+2.Click Sukurti paskyra on the right corner above or just go to(https://zyro.com/lt/registruokis)
+3.Enter email which consist of [74] characters length
+4.Enter password
+5.Enter telephone number (6 symbols)
+6.Click "Sukurti paskyra"
+7.Open Developer tools > preview tab
+
+Expected: Registration should be successful also if email format or something else is invalid then validation
+error message should be clear (for instance: Email format is too long or Invalid, please enter next one or etc.)
+Also validation error message should be displayed inline below particular field.
+
+Actual: Registration failed. Server Error 500.
+
+Video: < https://www.loom.com/share/49c8f1b933b94e5689a6ae1bfc7a557d >
+
+-------------------------------------------------------------------------
+
+3. Login: Input Fields Error message Validations
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issues:
+
+Case 1: If the user skipped all fields in login page (email, password) and click 'Connect' then displayed Error message
+container above. All fields error message ("Oi! nepamirsk ivesti el.pasto" and "Nepamirsk irasyti savo slaptazodzio") displayed
+correctly in-line below particular fields also red borders indicates that.[PASS]
+
+Case 2: If the user entered email but skipped password field and click "Connect" then displayed Error message
+container above. But it's not correct because the client skipped password field and error message should indicate just
+ password validation ("Nepamirsk irasyti savo slaptazodzio") field also field borders should be red color as well.[*FAILED*]
+
+Case 3: If the user skipped email input and entered just password and hit "Connect" then displayed Error message
+container above. Validation error message displayed correctly just email input field marked as required
+ ("Oi! nepamirsk ivesti el.pasto") [PASS]
+
+Expected: If the user skipped password field then validation error message should indicate ("Nepamirsk irasyti savo slaptazodzio")
+Field borders should be red as well.
+
+Actual: Password was skipped but validation error below password field was not displyed just error message container above.
+Should be the same.
+
+Video: <https://www.loom.com/share/95855a89fe3044efadfe2c8a35b37c65>
+
+-------------------------------------------------------------------------
+
+4. Design: Language switcher scroll edge outside (Pink background)
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issues: Scroll is too long and not fit in the drop-down size. Scroll Edge is out of the drop-down. (top/down)
+
+Steps to replicate:
+
+1. Open zyro.com/lt
+2. Click on Language switcher
+3. Look at the scroll egde
+
+Expected: Scroll should not be outside the drop-down
+Actual: Scroll is outside the dropdown
+
+Additional: For best visual view zoom browser display to 150%.
+
+Video: <https://www.loom.com/share/d3ae41083fcd476d90c0f18511ce5c36>
+
+Improvement: For best UX I want sugest that drop-down option (language) should be able to select with keyboard.
+Example: I want to select {Mexico} I hit "M" on keyboard and scroll should navigate to the first language that starts from "M"
+
+-------------------------------------------------------------------------
+
+5. Referral link: Rekomenduok zyro
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issues: The user select {Rekomenduok zyro} option from the account settings on the first load it looks like Sign up
+form is loaded after some seconds Referral link modal.
+
+
+Steps to replicate:
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter account [email, password]
+3. Click Connect
+4. Open Account settings
+5. Click Rekomenduok zyro
+
+Expected: On click action displayed Referral link modal and nothing else.
+Actual: At the first load it looks like Sign up form is loaded but after some seconds disappeared and
+Referral link modal just displayed.
+
+Video: <https://www.loom.com/share/5bd6319064f24ff2b1a1b708c65c8bd7>
+
+-------------------------------------------------------------------------
+
+6. Registruokis su Apple option: option is not available on the next browsers
+
+Browser: Brave Version 1.34.81 /  Chrome / Safari / Firefox
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: Registruokis su Apple option is not available on [Safari, Firefox, Chrome] browsers, though on Brave is available.
+
+Steps to replicate:
+Preconditions: The user shuould not be connected to zyro.
+
+1. Open zyro on [Safari, Firefox, Chrome]
+2. Click sukurti paskyra
+3. Notice differences
+
+Expected: All options should be available on all browsers.
+Actual: Registruotis option available just on Brave browser.
+
+Video: <https://www.loom.com/share/fa25c704832c47a582bac7e67b6801e4>
+
+-------------------------------------------------------------------------
+
+7. Improvement: Redirect to user dashboard after login
+
+Notice: I don't know what requirements are but it looks strange. The user has active account he already paid for
+particular plan but always redirected to https://zyro.com/lt/mokejimai. It will be more simple if the client after login
+should be redirected to his own dashboard.
+
+If he clicks on zyro logo he redirected to home page
+And he redirected just after he clicks on "Prisijungti" or "Susikurti paskyra"
+
+Video: <https://www.loom.com/share/1289e7d99a8d450a9459cb1c7906f498>
+
+-------------------------------------------------------------------------
+
+8. URL: Slug language
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: Some website url slug is native language some not. I think should be translated all to our natve language
+because website language selected in Lithuanian.
+
+In the client account settings [Svetaines, Domenai, El.pastas, Planai] links slug's are not translated to native language.
+Though links on the home page navbar translated.
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter account [email, password]
+3. Click Connect
+4. Open Account settings
+5. Check header links
+
+Expected: All URL slugs should be translated according to the page title.
+Actual: Not all URL slugs translated to page title's.
+
+Video: https://www.loom.com/share/7cac246d3066459aba47b91b208409ce
+
+-------------------------------------------------------------------------
+
+9. eCommerce Guide not received in yahoo mailbox.
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: eCommerce Guide not received in yahoo mailbox though on Gmail does. According to the request status
+it seems like ebook should be sent.
+
+Payload:
+
+email: "odis_geras@yahoo.com"
+usedFeature: "ebook"
+
+Preview:
+ok: 1
+
+Expected: eCommerce guide should be received in the yahoo mailbox
+Actual: eCommerce guide not received in the yahoo mailbox.
+
+-------------------------------------------------------------------------
+
+10. Console error: Token & data.json
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Issue: Console displayed errors on Website creation action.
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter account [email, password]
+3. Click Connect
+4. Click Kurti svetaine
+5. Select Rinktis Sablona
+6. Select template
+7. Open Developer tools
+8. Look at the request
+
+Expected: Console should be without errors
+Actual: Console showing errors
+
+Video: <https://www.loom.com/share/6ac7128b6dc34fde9a0351b4b2d33a58>
+
+-------------------------------------------------------------------------
+
+11. Can't replicate it again, but you need to check it.
+
+Issue: On some browsers button text is {PRADEK JAU DABAR} on some {SUSIKURTI PASKYRA} and Element <a href> was different.
+
+Video: <https://www.loom.com/share/8c2f94e7ea5b4b64a7373f9bd16c3410>
+
+--------------------------------------------------------------------------
+
+12. Connected user: User settings drop-down display
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: The user settings all options are not visible fully if 'cookies' modal is not closed.
+
+Preconditions: the client should delete cookies from zyro application.
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter account [email, password]
+3. Click Connect
+4. Navigate to user dashboard > Click user settings on the right corner
+
+Expected: For best UX user settings options should be visible fully though cookie modal is displayed
+Actual: Some options are not available.
+
+Video: <https://www.loom.com/share/694bfda14f5d4568b5c7748ed9ced341>
+
+--------------------------------------------------------------------------
