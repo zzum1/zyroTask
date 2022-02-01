@@ -168,8 +168,8 @@ Notice: I don't know what requirements are but it looks strange. The user has ac
 particular plan but always redirected to https://zyro.com/lt/mokejimai. It will be more simple if the client after login
 should be redirected to his own dashboard.
 
-If he clicks on zyro logo he redirected to home page
-And he redirected just after he clicks on "Prisijungti" or "Susikurti paskyra"
+If client clicks on zyro logo he redirected to home page
+The client redirected to dashboard just after he clicks on "Prisijungti" or "Susikurti paskyra"
 
 Video: <https://www.loom.com/share/1289e7d99a8d450a9459cb1c7906f498>
 
