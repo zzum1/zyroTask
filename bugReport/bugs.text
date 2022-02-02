@@ -412,5 +412,25 @@ Video: <https://www.loom.com/share/a8505ff38cbb42aea6e926047022aeac>
 
 --------------------------------------------------------------------------
 
+19. The user is not able to login to zyro at once
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: The user entered valid inputs and click connect. Then user was redirected to Server error page.
+It looks like problem is with the routes > https://zyro.com/lt/https:/dashboard.zyro.com/sites.
+If delete the first URL for instance https://zyro.com/lt/ the client redirected to dashboard if deleted second redirected
+to home page..
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter valid inputs
+3. Click Connect
+
+Expected: The client should be redirected to home page or dashboard.
+Actual:  The client redirected to https://zyro.com/lt/https:/dashboard.zyro.com/sites and given 500.
+
+Video: <https://www.loom.com/share/25c78cc8174848d8a575183405fc4f31>
 
 
