@@ -433,4 +433,31 @@ Actual:  The client redirected to https://zyro.com/lt/https:/dashboard.zyro.com/
 
 Video: <https://www.loom.com/share/25c78cc8174848d8a575183405fc4f31>
 
+--------------------------------------------------------------------------
 
+20. Website edit: Svetaines name input validation
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+
+Issue: There are no validation for website name. Too long text given console error though in front side 'spinner'
+is loaded and nothing happen. Probably should be error message in-line for the client. {example: text to long and etc.}
+
+Steps to reproduce:
+
+Preconditions:  The client should have created website
+
+1. Go to https://zyro.com/lt/prisijunk
+2. Enter valid inputs
+3. Click Connect
+4. Go to dashboard
+5. Click (three dots - settings) on website element
+6. Select Pervadinti svetaine
+7. Click Save
+8. Open Console
+
+Expected: Should be error message in-line for the client for UX {Text too long and etc.}
+Actual: Spinner louded modal still displayed and nothing happen
+
+Video: <https://www.loom.com/share/9d4007220d43473ba6b96dae372aa62e>
