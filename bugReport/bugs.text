@@ -1,9 +1,11 @@
-# bugs
+# All tasks marked according to Priority :)
 
 1. Registration side: Invalid email 422
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Priority: MEDIUM
 
 Issue: In the registration form the client entered all inputs. Email length was [75] characters.
        Then the client clicked "Create account" button.After that was displayed black modal below
@@ -37,6 +39,8 @@ Video: < https://www.loom.com/share/5cb3d16be5074b36a88af0c1e0d38993 >
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
 
+Priority: HIGHEST
+
 Issue: Issue: In the registration form the client entered all inputs. Email length was [74] characters.
        Then the client clicked "Create account" button.After that All inputs still displayed in the fields
        but it's not clear whats actualy happen. According to request looks like problem is with
@@ -67,6 +71,8 @@ Video: < https://www.loom.com/share/49c8f1b933b94e5689a6ae1bfc7a557d >
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
 
+Priority: LOW
+
 Issues:
 
 Case 1: If the user skipped all fields in login page (email, password) and click 'Connect' then displayed Error message
@@ -96,6 +102,8 @@ Video: <https://www.loom.com/share/95855a89fe3044efadfe2c8a35b37c65>
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
 
+Priority: LOW
+
 Issues: Scroll is too long and not fit in the drop-down size. Scroll Edge is out of the drop-down. (top/down)
 
 Steps to replicate:
@@ -120,6 +128,8 @@ Example: I want to select {Mexico} I hit "M" on keyboard and scroll should navig
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Priority: MEDIUM
 
 Issues: The user select {Rekomenduok zyro} option from the account settings on the first load it looks like Sign up
 form is loaded after some seconds Referral link modal.
@@ -146,6 +156,8 @@ Video: <https://www.loom.com/share/5bd6319064f24ff2b1a1b708c65c8bd7>
 Browser: Brave Version 1.34.81 /  Chrome / Safari / Firefox
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
 
+Priority: HIGHEST
+
 Issue: Registruokis su Apple option is not available on [Safari, Firefox, Chrome] browsers, though on Brave is available.
 
 Steps to replicate:
@@ -164,6 +176,8 @@ Video: <https://www.loom.com/share/fa25c704832c47a582bac7e67b6801e4>
 
 7. Improvement: Redirect to user dashboard after login
 
+Priority: HIGH
+
 Notice: I don't know what requirements are but it looks strange. The user has active account he already paid for
 particular plan but always redirected to https://zyro.com/lt/mokejimai. It will be more simple if the client after login
 should be redirected to his own dashboard.
@@ -179,6 +193,8 @@ Video: <https://www.loom.com/share/1289e7d99a8d450a9459cb1c7906f498>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Priority: MEDIUM
 
 Issue: Some website url slug is native language some not. I think should be translated all to our natve language
 because website language selected in Lithuanian.
@@ -206,6 +222,8 @@ Video: https://www.loom.com/share/7cac246d3066459aba47b91b208409ce
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
 
+Priority: HIGHEST
+
 Issue: eCommerce Guide not received in yahoo mailbox though on Gmail does. According to the request status
 it seems like ebook should be sent.
 
@@ -226,6 +244,8 @@ Actual: eCommerce guide not received in the yahoo mailbox.
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600) 23,5-inch (1920 × 1080)
+
+Priority: MEDIUM
 
 Issue: Console displayed errors on Website creation action.
 
@@ -252,6 +272,8 @@ Video: <https://www.loom.com/share/6ac7128b6dc34fde9a0351b4b2d33a58>
 Issue: On some browsers button  on  the right corner abovetext is {PRADEK JAU DABAR}
 on some {SUSIKURTI PASKYRA} and Element <a href> was different.
 
+Priority: HIGH
+
 Video: <https://www.loom.com/share/8c2f94e7ea5b4b64a7373f9bd16c3410>
 
 --------------------------------------------------------------------------
@@ -260,6 +282,8 @@ Video: <https://www.loom.com/share/8c2f94e7ea5b4b64a7373f9bd16c3410>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Priority: LOW
 
 Issue: The user settings all options are not visible fully if 'cookies' modal is not closed.
 
@@ -282,6 +306,8 @@ Video: <https://www.loom.com/share/694bfda14f5d4568b5c7748ed9ced341>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Priority: MEDIUM
 
 Issue: All FAQ items is in LT language but one FAQ from the list is translated in English. Though page language selected LT.
 Text: "Can I use Zyro website builder and Titan separately?"
@@ -306,6 +332,8 @@ Video: <https://www.loom.com/share/1a95d34d84e64fc294c7e61e99390df6>
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
 
+Priority: LOW
+
 Issue: Maybe we can improve karjera scroll up if some fields are skipped. Right its not clear which field is skipped
 and looks weird then error message displayed above and the user should scroll manualy.
 
@@ -328,7 +356,9 @@ Video how actually is: https://www.loom.com/share/cf8bd2fbc06041368b814d0120846d
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
 
-Issue: Website language selected as LT but on Pagalba page after redirect chaged to EN. I think should be consistency.
+Priority: HIGH
+
+Issue: Website language selected as LT but on Pagalba page after redirect changed to EN. I think should be consistency.
 
 Steps to reproduce:
 
@@ -347,6 +377,8 @@ Video: <https://www.loom.com/share/a3e5a7454b1c4f4689698d02a6ffae09>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Priority: HIGH
 
 Issue: In Buisiness glossary page missed Language Switcher [LT]
 
@@ -367,6 +399,8 @@ Video: <https://www.loom.com/share/64e7a3b6f98943c08b643682b8fafd22>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Priority: LOW
 
 Issue: Icon generator size and format modal is not closed via 'X'. If click outside then closed.
 
@@ -390,6 +424,8 @@ Video:<https://www.loom.com/share/e127bf3ec64943af999014cf2770a8e3>
 
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Priority: HIGH
 
 Issue: on [ecommerce-guide, buisiness glossary, recommend zyro] pages language is selected LT but content displayed in EN.
 
@@ -417,6 +453,8 @@ Video: <https://www.loom.com/share/a8505ff38cbb42aea6e926047022aeac>
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
 
+Priority: HIGHEST
+
 Issue: The user entered valid inputs and click connect. Then user was redirected to Server error page.
 It looks like problem is with the routes > https://zyro.com/lt/https:/dashboard.zyro.com/sites.
 If delete the first URL for instance https://zyro.com/lt/ the client redirected to dashboard if deleted second redirected
@@ -440,6 +478,7 @@ Video: <https://www.loom.com/share/25c78cc8174848d8a575183405fc4f31>
 Browser: Brave Version 1.34.81
 Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
 
+Priority: MEDIUM
 
 Issue: There are no validation for website name. Too long text given console error though in front side 'spinner'
 is loaded and nothing happen. Probably should be error message in-line for the client. {example: text to long and etc.}
