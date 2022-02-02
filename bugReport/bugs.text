@@ -249,7 +249,8 @@ Video: <https://www.loom.com/share/6ac7128b6dc34fde9a0351b4b2d33a58>
 
 11. Can't replicate it again, but you need to check it.
 
-Issue: On some browsers button text is {PRADEK JAU DABAR} on some {SUSIKURTI PASKYRA} and Element <a href> was different.
+Issue: On some browsers button  on  the right corner abovetext is {PRADEK JAU DABAR}
+on some {SUSIKURTI PASKYRA} and Element <a href> was different.
 
 Video: <https://www.loom.com/share/8c2f94e7ea5b4b64a7373f9bd16c3410>
 
@@ -264,6 +265,8 @@ Issue: The user settings all options are not visible fully if 'cookies' modal is
 
 Preconditions: the client should delete cookies from zyro application.
 
+Steps to reproduce:
+
 1. Go to https://zyro.com/lt/prisijunk
 2. Enter account [email, password]
 3. Click Connect
@@ -275,3 +278,139 @@ Actual: Some options are not available.
 Video: <https://www.loom.com/share/694bfda14f5d4568b5c7748ed9ced341>
 
 --------------------------------------------------------------------------
+13. Business email page: One of FAQ list item in English
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: All FAQ items is in LT language but one FAQ from the list is translated in English. Though page language selected LT.
+Text: "Can I use Zyro website builder and Titan separately?"
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/
+2. Click Produktai on the header menu
+3. Select buisiness email
+4. Scroll to FAQ [Klausimai ir atsakymai apie Titan]
+5. Look at the last one FAQ
+
+Expected: All FAQ items should be translated in LT language. According to page languagage selector.
+Actual: The last item from FAQ is translated in English ""Can I use Zyro website builder and Titan separately?"
+
+Video: <https://www.loom.com/share/1a95d34d84e64fc294c7e61e99390df6>
+
+--------------------------------------------------------------------------
+
+14. Improvement Karjera page: Scroll up to missed fiield
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: Maybe we can improve karjera scroll up if some fields are skipped. Right its not clear which field is skipped
+and looks weird then error message displayed above and the user should scroll manualy.
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/karjera
+2. Click Apply button to any position
+3. Submit empty form
+
+Expected: The client should be raised to a certain field
+Actual: The Error message validation displayed above.
+
+Video Example how should be: https://www.loom.com/share/edfe7e8eb65445e9a79e9e10a1e89441 solution from internet.
+Video how actually is: https://www.loom.com/share/cf8bd2fbc06041368b814d0120846d4a
+
+--------------------------------------------------------------------------
+
+15. Footer menu item [Saltiniai] Column: Pagalba page
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: Website language selected as LT but on Pagalba page after redirect chaged to EN. I think should be consistency.
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/
+2. Scroll to the footer menu items
+3. Select Pagalba from Saltiniai colum
+
+Expected: Page language should be LT
+Actual: The client is redirected to the https://support.zyro.com/en/ though should be redirected to https://support.zyro.com/lt/
+
+Video: <https://www.loom.com/share/a3e5a7454b1c4f4689698d02a6ffae09>
+
+--------------------------------------------------------------------------
+
+16. Footer menu item [Saltiniai] Column: Zodynas verslui page
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: In Buisiness glossary page missed Language Switcher [LT]
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/
+2. Scroll to the footer menu items
+3. Select Zodynas verslui from Saltiniai colum
+
+Expected: Language switcher should be in all pages.
+Actual: Language switcher not visible
+
+Video: <https://www.loom.com/share/64e7a3b6f98943c08b643682b8fafd22>
+
+--------------------------------------------------------------------------
+
+17. Icon generator [size and format] modal is not closed via 'X'
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: Icon generator size and format modal is not closed via 'X'. If click outside then closed.
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/
+2. Scroll to the footer menu items
+3. Select Ikoneles generatorius from Dirbtinis intelektas
+4. Click Noriu ikonos
+4. Cick Download button on the right corner
+5. Click 'X'
+
+Expected: Modal should close via 'X' button
+Actual: Modal closed if background body is clicked outside
+
+Video:<https://www.loom.com/share/e127bf3ec64943af999014cf2770a8e3>
+
+--------------------------------------------------------------------------
+
+18. Pages content language
+
+Browser: Brave Version 1.34.81
+Device: Desktop macOS Big Sur 11.0.1 displays: 13,3-inch (2560 × 1600)
+
+Issue: on [ecommerce-guide, buisiness glossary, recommend zyro] pages language is selected LT but content displayed in EN.
+
+Preconditions:  Home page langauge should be selected to LT
+
+Steps to reproduce:
+
+1. Go to https://zyro.com/lt/
+2. Scroll to the  footer and click page Žodynas verslui
+3. Check content language
+4. Select E. komercijos gidas
+5. Check content language
+6. Select Rekomenduok Zyro
+7. Check content language
+
+Expected: The page content should be translated to language which is selected
+Actual: The page content is not translated according to language.
+
+Video: <https://www.loom.com/share/a8505ff38cbb42aea6e926047022aeac>
+
+--------------------------------------------------------------------------
+
+
+
